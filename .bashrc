@@ -6,7 +6,7 @@
 
 ## Custom Terminal Displays by Ashton :))
 # figlet -f DeltaCorpsPriest1 Ashton
-# pokemon-colorscripts --no-title --name reshiram
+  pokemon-colorscripts --no-title --name eiscue
 # figlet -f "red_phoenix.flf" "Ashton" -k
 # fastfetch
 
