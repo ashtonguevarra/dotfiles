@@ -1,5 +1,5 @@
 # dotfiles
-My linux desktop dotfiles.
+My Arch linux Hyprland desktop dotfiles.
 
 <table>
   <tr>
