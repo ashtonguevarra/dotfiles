@@ -1,4 +1,4 @@
-# dotfiles
+# Ashton's Dotfiles
 My Arch linux Hyprland desktop dotfiles.
 
 <table>
