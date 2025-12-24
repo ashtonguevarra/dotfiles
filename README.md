@@ -19,3 +19,11 @@ My Arch linux Hyprland desktop dotfiles.
     <td><img src="demo/undertale3" width="400"/></td>
   </tr>
 </table>
+
+## Spotify Theme
+For this I used [Spicetify] (https://spicetify.app/) 
+[My theme] (https://github.com/spicetify/spicetify-themes/tree/master/text)
+
+## Notes
+> I used the same color scheme for both the Wizard of Earthsea and Undertale themes, based on the Nord color palette. The only difference between them is the wallpaper, which you can change to your liking. I’ve included the wallpapers in the `wallpaper` folder.
+
