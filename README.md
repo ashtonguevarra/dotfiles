@@ -1,5 +1,5 @@
 # Ashton's Dotfiles
-My Arch linux Hyprland desktop dotfiles.
+My Arch linux Hyprland desktop dotfiles. A wizard of Earthsea theme.
 
 <table>
   <tr>
