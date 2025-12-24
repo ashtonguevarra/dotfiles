@@ -1,8 +1,7 @@
 # Ashton's Dotfiles
 My Arch linux Hyprland desktop dotfiles. 
-##
+
 ## A wizard of Earthsea Theme
-##
 <table>
   <tr>
     <td><img src="demo/earthsea1" width="400"/></td>
@@ -14,7 +13,6 @@ My Arch linux Hyprland desktop dotfiles.
 </table>
 
 ## Undertale Theme
-##
 <table>
   <tr>
     <td><img src="demo/undertale1" width="400"/></td>
