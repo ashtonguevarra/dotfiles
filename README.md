@@ -22,7 +22,7 @@ My Arch linux Hyprland desktop dotfiles.
 
 ## Spotify Theme
 - For this I used [Spicetify](https://spicetify.app/) 
-- Using [this theme](https://github.com/spicetify/spicetify-themes/tree/master/text)
+- Using [this theme](https://github.com/spicetify/spicetify-themes/tree/master/text) in Nord
 
 ## Notes
 > I used the same color scheme for both the Wizard of Earthsea and Undertale themes, based on the Nord color palette. The only difference between them is the wallpaper, which you can change to your liking. I’ve included the wallpapers in the [wallpaper](https://github.com/ashtonguevarra/dotfiles/tree/main/wallpaper) folder.
