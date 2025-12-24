@@ -1,0 +1,17 @@
+confirm_os_window_close 0
+# vim:fileencoding=utf-8:foldmethod=marker
+
+# BEGIN_KITTY_THEME
+# Base2Tone Morning Dark
+include current-theme.conf
+# END_KITTY_THEME
+
+
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="JetBrains Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS

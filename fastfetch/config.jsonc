@@ -1,0 +1,28 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "kitty-direct",
+    "source": "$(find $HOME/.config/fastfetch/logo/ -type f | shuf -n 1)",
+    "height": 15,
+    "width": 30
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "de",
+    "cpu",
+    "gpu",
+    "battery",
+    "memory",
+    "disk",
+    "terminal",
+   
+    "colors"
+  ]
+}
+
