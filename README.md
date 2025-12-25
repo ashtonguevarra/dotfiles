@@ -1,7 +1,5 @@
 # Ashton's Dotfiles
-My Arch linux Hyprland desktop 
-
-## A wizard of Earthsea Theme
+## A wizard of Earthsea 
 <table>
   <tr>
     <td><img src="demo/earthsea1" width="400"/></td>
@@ -12,7 +10,7 @@ My Arch linux Hyprland desktop
   </tr>
 </table>
 
-## Undertale Theme
+## Undertale
 <table>
   <tr>
     <td><img src="demo/undertale2" width="400"/></td>
@@ -20,7 +18,7 @@ My Arch linux Hyprland desktop
   </tr>
 </table>
 
-## Spotify Theme
+## Spotify 
 - For this I used [Spicetify](https://spicetify.app/) 
 - Using [this theme](https://github.com/spicetify/spicetify-themes/tree/master/text) in Nord
   
