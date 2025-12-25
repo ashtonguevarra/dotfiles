@@ -1,4 +1,4 @@
-# Ashton's Dotfiles
+# Themes
 ## A wizard of Earthsea 
 <table>
   <tr>
