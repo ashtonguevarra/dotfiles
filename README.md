@@ -1,4 +1,3 @@
-# Themes
 ## A wizard of Earthsea 
 <table>
   <tr>
@@ -18,8 +17,4 @@
   </tr>
 </table>
 
-## Spotify 
-- For this I used [Spicetify](https://spicetify.app/) 
-- Using [this theme](https://github.com/spicetify/spicetify-themes/tree/master/text) in Nord
-  
 
