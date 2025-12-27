@@ -4,25 +4,68 @@
     "type": "kitty-direct",
     "source": "$(find $HOME/.config/fastfetch/logo/ -type f | shuf -n 1)",
     "height": 15,
-    "width": 30
-  },
-  "modules": [
-    "title",
-    "separator",
-    "os",
-    "host",
-    "kernel",
-    "uptime",
-    "packages",
-    "de",
-    "cpu",
-    "gpu",
-    "battery",
-    "memory",
-    "disk",
-    "terminal",
-   
-    "colors"
-  ]
+    "width": 25,
+    "padding": {
+               "left": 2,
+               "bottom": 2
 }
 
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+	"break",
+	"break",
+	{
+            "type": "title",
+            "keyWidth": 10
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "66",  // = color3
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "66",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "66",
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "66",
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "66",
+        },
+        {
+            "type": "wm",
+            "key": " ",
+            "keyColor": "66",
+        },
+        {
+            "type": "uptime",
+            "key": " ",
+            "keyColor": "66",
+        },
+        {
+            "type": "media",
+            "key": "󰝚 ",
+            "keyColor": "66",
+        },
+        "break",
+        "colors",
+        "break",
+        "break",
+    ]
+}
