@@ -1,98 +1,194 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 24,
-    "spacing": 5,
-
-    "modules-left": ["hyprland/workspaces"],
-//  "modules-center": ["clock"],
-    "modules-right": ["group/net", "clock", "wireplumber", "group/bat", "tray"],
-
-    "group/usage": {
-        "orientation": "horizontal",
-        "modules": ["memory", "temperature"]
-    },
-
-    "group/bat": {
-        "orientation": "horizontal",
-        "modules": ["battery", "backlight"]
-    },
-
-    "group/net": {
-        "orientation": "horizontal",
-        "modules": [ "network", "bluetooth"]
-    },
-
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "format-icons": {
-            "1": "1"
-        },
-        "icon-size": 100,
-        "sort-by-number": true,
-        "persistent-workspaces": {
-            "1": []
-            
-        }
-    },
-
-    "clock": {
-        "format": "{:%d/%m/%Y  %I:%M}"
-    },
-
-    "wireplumber": {
-        "format": "\udb81\udd7e {volume}%",
-        "max-volume": 100,
-        "scroll-step": 5
-    },
-
-    "battery": {
-        "bat": "BAT1",
-        "interval": 60,
-        "format": "{icon} {capacity}%",
-        "format-icons": ["\uf244", "\uf243", "\uf242", "\uf241", "\uf240"],
-    },
-
-    "backlight": {
-        "format": " \udb80\udcdf {percent}%"
-    },
-
-    "memory": {
-        "interval": 30,
-        "format": " \uf4bc {used:0.1f}G"
-    },
-
-    "temperature": {
-        "format": "  {temperatureC}°C"
-    },
-
-    "network": {
-        "format": "",
-        "format-ethernet": "\udb83\udc9d ",
-        "format-wifi": "{icon} ",
-        "format-disconnected": "\udb83\udc9c ",
-        "format-icons": ["\udb82\udd2f", "\udb82\udd1f", "\udb82\udd22", "\udb82\udd25", "\udb82\udd28"],
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "{ifname}",
-        "tooltip-format-disconnected": "Disconnected",
-    },
-
-    "bluetooth": {
-        "format": "\udb80\udcaf",
-        "format-disabled": "\udb80\udcb2",
-        "format-connected": "\udb80\udcb1",
-        "tooltip-format": "{controller_alias}\t{controller_address}",
-        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
-    },
-
-    "hyprland/language": {
-        "format": "{short}"
-    },
-
-    "tray": {
-        "icon-size": 15,
-        "spacing": 16
+  "reload_style_on_change": true,
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+  "height": 28,
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "mpris"
+  ],
+  "modules-right": [
+    "memory",
+    "disk",
+    "custom/screenrecording-indicator",
+    "custom/idle-indicator",
+    "network",
+    "bluetooth",
+    "backlight",
+    "pulseaudio",
+    "battery",
+    "clock",
+    "tray"
+  ],
+  "custom/screenrecording-indicator": {
+    "on-click": "~/.config/hypr/scripts/screenrecord",
+    "exec": "~/.config/waybar/scripts/indicator-record",
+    "signal": 8,
+    "return-type": "json"
+  },
+  "custom/idle-indicator": {
+    "on-click": "~/.config/hypr/scripts/toggle-idle",
+    "exec": "~/.config/waybar/scripts/indicator-idle",
+    "signal": 9,
+    "return-type": "json"
+  },
+  "custom/logo": {
+    "format": "󰊠",
+    "tooltip": false,
+    "on-click": "~/dotfiles/install/themes/symphony switch",
+    "on-click-right": "~/.config/hypr/scripts/cycle-wallpaper next"
+  },
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+      "default": ""
     }
+  },
+  "backlight": {
+    "format": "{icon}",
+    "tooltip-format": "🌕 {percent}%",
+    "format-icons": [
+      "󰃜",
+      "󰃝",
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "scroll-step": 10,
+    "on-click": "~/.config/waybar/scripts/wall-picker",
+    "on-click-right": "~/.config/waybar/scripts/random-wall"
+  },
+  "disk": {
+    "interval": 30,
+    "format": "󱛟 {percentage_free}%",
+    "tooltip-format": "Used: {used}\nFree: {free}\nTotal: {total}",
+    "path": "/"
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "󰍛 {usage}%",
+    "on-click": "kitty -e btop"
+  },
+  "memory": {
+    "format": " {used:0.1f}gb",
+    "interval": 2,
+    "on-click": "kitty -e btop"
+  },
+  "clock": {
+    "format": "{:L%H:%M}",
+    "format-alt": "{:L%A %d %B}",
+    "tooltip": false
+  },
+  "network": {
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "format": "{icon} {essid}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰀂",
+    "format-disconnected": "󰤮",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 3,
+    "spacing": 1,
+
+  },
+  "battery": {
+    "format": "{icon}",
+    "format-discharging": "{icon} {capacity}%",
+    "format-charging": "{icon}",
+    "format-plugged": "",
+    "on-click": "~/.config/rofi/scripts/power-profiles",
+    "format-icons": {
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ],
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "",
+    "tooltip-format": "Devices connected: {num_connections}",
+    "on-click": "blueberry"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "on-click": "kitty --class=Wiremix -e wiremix",
+    "on-click-right": "pamixer -t",
+    "tooltip-format": "🎵 {volume}%",
+    "scroll-step": 5,
+    "format-muted": "",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    }
+  },
+  "tray": {
+    "icon-size": 13,
+    "spacing": 4
+  },
+  "mpris": {
+    "format": "{player_icon} {artist}{title}",
+    "format-paused": "{status_icon} {artist} - {title}</i>",
+    "player-icons": {
+      // "default": "🎵",
+      // "mpv": ""
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    "max-length": 70
+  }
 }

@@ -1,49 +1,106 @@
-@define-color foreground #ECEFF4;
-@define-color foreground-inactive #ECEFF4;
-@define-color background #2e3440;
-@define-color background-alt #2e3440;
+/**
+ * ════════════════════════════════════════════════════════
+ *   Style.css
+ * ════════════════════════════════════════════════════════
+ */
+
+
 
 * {
-    font-family: JetBrains Mono;
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
+  background-color: transparent;
+  color: @on_background;
+  border: none;
+  border-radius: 0;
+  font-family: 'JetBrains Mono';
+  font-size: 13px;
 }
 
-#waybar {
-    color: @foreground;
-    background-color: @background;
+tooltip {
+    background: #2e3440;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+menu {
+  background: #2e3440;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0px;
+  padding: 4px;
+}
+
+menu menuitem:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+window#waybar {
+  background: #2e3440;
+}
+
+.modules-center {
+  border-radius: 0;
+  padding: 0 80px;
 }
 
 #workspaces button {
-    padding-left: 1em;
-    padding-right: 1.3em;
-}
-
-#workspaces button.empty {
-    color: @foreground-inactive;
+  all: initial;
+  padding: 0 5px;
+  margin: 0 0px;
+  min-width: 5px;
 }
 
 #workspaces button.active {
-    background-color: @background-alt;
-    border-radius: 3px;
+  background: @waybar_accent;
+  color: @waybar_accent_fg;
+  font-weight: 700;
 }
 
-#wireplumber,
-#bat,
-#tray,
-#usage,
-#net {
-    background-color: @background-alt;
-    border-radius: 3px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    margin-left: 0.3em;
+#workspaces button.empty {
+  opacity: 0.5;
 }
 
-#battery,
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0px;
+}
+
+#mpd {
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+#cpu,
+#disk,
 #memory,
-#language,
-#network {
-    margin-right: 0.8em;
+#battery,
+#network,
+#clock,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#window,
+#mpris,
+#tray,
+#custom-screenrecording-indicator,
+#custom-idle-indicator {
+    padding: 0 5px;
+    font-weight: 600;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-top: 2px;
+  margin-left: 8.75px;
+  font-size: 13px;
+}
+
+#custom-logo {
+  padding: 0 6px;
+  font-size: 15px;
+  background: @waybar_accent;
+  color: @waybar_accent_fg;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
 }
