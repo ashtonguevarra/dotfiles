@@ -8,29 +8,29 @@
 
 * {
   background-color: transparent;
-  color: @on_background;
+  color: #5E81AC;
   border: none;
   border-radius: 0;
   font-family: 'JetBrains Mono';
   font-size: 13px;
-}
+ }
 
 tooltip {
     background: #2e3440;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #5E81AC;
   border-radius: 4px;
   padding: 6px 10px;
 }
 
 menu {
   background: #2e3440;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid #5E81AC;
   border-radius: 0px;
   padding: 4px;
 }
 
 menu menuitem:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #5E81AC;
 }
 
 window#waybar {
@@ -60,7 +60,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: #A3BEAC;
   border-radius: 0px;
 }
 
