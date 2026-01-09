@@ -15,11 +15,11 @@
     "disk",
     "custom/screenrecording-indicator",
     "custom/idle-indicator",
-    "network",
-    "bluetooth",
     "backlight",
     "pulseaudio",
     "battery",
+    "network",
+    "bluetooth",
     "tray"
   ],
   "custom/screenrecording-indicator": {
@@ -58,8 +58,8 @@
     }
   },
   "backlight": {
-    "format": "{icon} brightness",
-    "tooltip-format": "🌕 {percent}%",
+    "format": "{icon} brightness: {percent}%",
+    "tooltip-format": "{percent}%",
     "format-icons": [
       "󰃜",
       "󰃝",
@@ -101,9 +101,9 @@
       "󰤨"
     ],
     "format": "{icon} network {essid}",
-    "format-wifi": "{icon} network",
-    "format-ethernet": "󰀂",
-    "format-disconnected": "󰤮",
+    "format-wifi": "{icon} {essid}",
+    "format-ethernet": "󰀂 ethernet",
+    "format-disconnected": "󰤮 disconnected",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-disconnected": "Disconnected",
@@ -113,7 +113,7 @@
   },
   "battery": {
     "format": "{icon} battery",
-    "format-discharging": "{icon} battery {capacity}%",
+    "format-discharging": "{icon} battery: {capacity}%",
     "format-charging": "{icon} charging",
     "format-plugged": " plugged",
     "on-click": "~/.config/rofi/scripts/power-profiles",
@@ -160,12 +160,12 @@
     "on-click": "blueberry"
   },
   "pulseaudio": {
-    "format": "{icon}  sound",
+    "format": "{icon}  volume: {volume}%",
     "on-click": "kitty --class=Wiremix -e wiremix",
-    "on-click-right": "pamixer -t",
-    "tooltip-format": "🎵 {volume}%",
+    "on-click-right": "vo -t",
+    "tooltip-format": "{volume}%",
     "scroll-step": 5,
-    "format-muted": "",
+    "format-muted": " muted",
     "format-icons": {
       "default": [
         "",
