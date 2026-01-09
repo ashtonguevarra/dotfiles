@@ -9,14 +9,14 @@
 * {
   background-color: transparent;
   color: #5E81AC;
-  border: none;
+  border-bottom: 0;
   border-radius: 0;
   font-family: 'JetBrains Mono';
   font-size: 13px;
  }
 
 tooltip {
-    background: #2e3440;
+  background: #2e3440;
   border: 1px solid #5E81AC;
   border-radius: 4px;
   padding: 6px 10px;
@@ -60,7 +60,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background: #A3BEAC;
+  background: #5E81AC;
   border-radius: 0px;
 }
 
@@ -76,15 +76,25 @@ window#waybar {
 #network,
 #clock,
 #bluetooth,
+#window,
 #pulseaudio,
 #backlight,
-#window,
-#mpris,
 #tray,
 #custom-screenrecording-indicator,
 #custom-idle-indicator {
     padding: 0 5px;
     font-weight: 600;
+    border-bottom: 2px solid #5E81AC;
+    margin: 4px 3px;
+    padding: 2px 12px
+}
+
+#workspaces,
+#mpris,
+#clock {
+  margin: 4px 3px;
+  padding: 2px 12px;
+  border: 2px solid #5E81AC;
 }
 
 #custom-screenrecording-indicator {
