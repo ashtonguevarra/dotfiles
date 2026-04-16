@@ -2,14 +2,14 @@
 inject_theme_js        = 1
 inject_css             = 1
 spotify_launch_flags   = 
-spotify_path           = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/d5ba61e0e06ba34e0dd2f9bd61c71fd1f41db0e2dfcafb4043856623458b6076/files/extra/share/spotify
-prefs_path             = /home/ashton/.var/app/com.spotify.Client/config/spotify/prefs
+spotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/d5ba61e0e06ba34e0dd2f9bd61c71fd1f41db0e2dfcafb4043856623458b6076/files/extra/share/spotify
+prefs_path = /home/ashton/.var/app/com.spotify.Client/config/spotify/prefs
 current_theme          = text
 replace_colors         = 1
 overwrite_assets       = 1
 check_spicetify_update = 1
 always_enable_devtools = 0
-color_scheme           = 
+color_scheme           = Nord
 
 [Preprocesses]
 expose_apis        = 1
@@ -29,4 +29,4 @@ experimental_features = 1
 ; DO NOT CHANGE!
 [Backup]
 version = 1.2.82.428.g0ac8be2b
-with    = 2.42.14
+with    = 2.42.10
