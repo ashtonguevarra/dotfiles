@@ -1,63 +1,34 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-  "logo": {
-    "type": "kitty-direct",
-    "source": "$(find $HOME/.config/fastfetch/logo/ -type f | shuf -n 1)",
-    "height": 15,
-    "width": 25,
-    "padding": {
-               "left": 2,
-               "bottom": 2
-}
-
-    },
-    "display": {
-        "separator": " "
-    },
-    "modules": [
-	"break",
-	"break",
-	{
-            "type": "title",
-            "keyWidth": 10
-        },
-        "break",
-        {
-            "type": "os",
-            "key": " ",
-        },
-        {
-            "type": "kernel",
-            "key": " ",
-        },
-        {
-            "type": "packages",
-            "format": "{} (pacman)",
-            "key": " ",
-        },
-        {
-            "type": "shell",
-            "key": " ",
-        },
-        {
-            "type": "terminal",
-            "key": " ",
-        },
-        {
-            "type": "wm",
-            "key": " ",
-        },
-        {
-            "type": "uptime",
-            "key": " ",
-        },
-        {
-            "type": "media",
-            "key": "󰝚 ",
-        },
-        "break",
-        "colors",
-        "break",
-        "break",
-    ]
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
 }
