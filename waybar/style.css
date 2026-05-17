@@ -8,7 +8,7 @@
 
 * {
  background-color: transparent;
-  color: #FFFFFF;
+  color: #67726e;
   border-bottom: 0;
   border-radius: 0;
   font-family: 'JetBrains Mono';
@@ -16,25 +16,25 @@
  }
 
  tooltip {
-  background: #000000;
-  border: 1px solid #FFFFFF;
+  background: #67726e;
+  border: 1px solid #67726e;
   border-radius: 4px;
   padding: 6px 10px;
 }
 
  menu {
-  background: #2e3440;
-  border: 1px solid #FFFFFF;
+  background: #3a3a38;
+  border: 1px solid #67726e;
   border-radius: 0px;
   padding: 4px;
 }
 
 menu menuitem:hover {
-  background: #FFFFFF;
+  background: #3a3a38;
 }
 
 window#waybar {
-  background: #000000;
+  background: #3a3a38;
 }
 
 .modules-center {
@@ -60,7 +60,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background: #FFFFFF;
+  background: #2e3440;
   border-radius: 0px;
 }
 

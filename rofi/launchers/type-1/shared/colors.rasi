@@ -15,4 +15,4 @@
 
 /* Import color-scheme from `colors` directory */
 
-@import "~/.config/rofi/colors/black"
+@import "~/.config/rofi/colors/gruvbox"
