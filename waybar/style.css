@@ -1,14 +1,15 @@
 /**
  * ════════════════════════════════════════════════════════
- *   Style.css
+ *   Ashton's Style.css 
  * ════════════════════════════════════════════════════════
  */
 
 
+@import "../../.cache/wal/colors-waybar.css";
 
 * {
  background-color: transparent;
-  color: #67726e;
+  color: @foreground;
   border-bottom: 0;
   border-radius: 0;
   font-family: 'JetBrains Mono';
@@ -16,25 +17,25 @@
  }
 
  tooltip {
-  background: #67726e;
-  border: 1px solid #67726e;
+  background: @background;
+  border: 1px;
   border-radius: 4px;
   padding: 6px 10px;
 }
 
  menu {
-  background: #3a3a38;
-  border: 1px solid #67726e;
+  background: @background;
+  border: 1px;
   border-radius: 0px;
   padding: 4px;
 }
 
 menu menuitem:hover {
-  background: #3a3a38;
+  background: @color3;
 }
 
 window#waybar {
-  background: #3a3a38;
+  background: @background;
 }
 
 .modules-center {
@@ -44,15 +45,15 @@ window#waybar {
 
 #workspaces button {
   all: initial;
-  padding: 0 5px;
-  margin: 0 0px;
+  padding: 0 8px;
+  margin: 0px;
   min-width: 5px;
+  background: @background;
 }
 
 #workspaces button.active {
-  background: @waybar_accent;
-  color: @waybar_accent_fg;
-  font-weight: 700;
+  background: @color3;
+  color: @background;
 }
 
 #workspaces button.empty {
@@ -60,7 +61,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  background: #2e3440;
+  background: @color3;
   border-radius: 0px;
 }
 
@@ -70,11 +71,11 @@ window#waybar {
 }
 
 #cpu,
+#clock,
 #disk,
 #memory,
 #battery,
 #network,
-#clock,
 #bluetooth,
 #window,
 #pulseaudio,
@@ -84,17 +85,19 @@ window#waybar {
 #custom-idle-indicator {
     padding: 0 5px;
     font-weight: 600;
-    /** border-bottom: 2px solid #5E81AC;*/
     margin: 4px 3px;
     padding: 2px 12px
 }
 
 #workspaces,
-#mpris,
+#mpris {
+  background: @color3;
+  color: @background
+}
+
 #clock {
   margin: 4px 3px;
   padding: 2px 12px;
-  /** border: 2px solid #5E81AC; */
 }
 
 #custom-screenrecording-indicator {
