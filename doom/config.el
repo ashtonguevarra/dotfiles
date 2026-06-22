@@ -31,8 +31,8 @@
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
-;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-nord)
+;; `load-theme' function. This is the defaultr
+(setq doom-theme 'doom-plain-dark)
 (setq doom-font (font-spec :family "JetBrains Mono" :size 15))
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -94,13 +94,7 @@
    "|"                     ;separator for inactive modes
    "DONE(d)" ))))
 
-;; google calendar synchronization with org-mode
-;; #+begin_src emacs-lisp
-(setq org-gcal-client-id "91519937826-lusrbhnhfdc352f4es1q2g01cl7mk2je.apps.googleusercontent.com"
-      org-gcal-client-secret "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"
-      org-gcal-fetch-file-alist '(("ashtonbreadserk@gmail.com" .  "~/todo.org")))
-(require 'org-gcal)
-
-(setq plstore-cache-passphrase-for-symmetric-encryption t)
-
-;; #+end_src
+(setq org-journal-date-prefix "#+TITLE: "
+      org-journa-time-prefix "* "
+      org-journal-date-format "%a, %Y-%a-%d"
+      org-journal-file-format "%Y-%m-%d.org")

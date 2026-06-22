@@ -1,0 +1,53 @@
+[33m2565831[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: rebase (abort): returning to refs/heads/main
+[33m2565831[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{1}: rebase (abort): returning to refs/heads/main
+[33mab324e1[m HEAD@{2}: commit: update everything
+[33m915c16e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{3}: commit: include cozy wizard screenshots
+[33mf9258e5[m HEAD@{4}: commit: gruvbox rice update
+[33m65ab12d[m HEAD@{5}: commit: hyprland config
+[33m34c82c4[m HEAD@{6}: commit: rice update (dark mode)
+[33m9bab61b[m HEAD@{7}: commit: dark mode
+[33ma94813a[m HEAD@{8}: reset: moving to origin/main
+[33m09e2560[m HEAD@{9}: commit: clean commit (remove secrets)
+[33m9d5af80[m HEAD@{10}: commit: clean commit (remove secrets)
+[33m2565831[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{11}: reset: moving to HEAD~1
+[33mfd964cb[m HEAD@{12}: commit: rice update (dark theme)
+[33m2565831[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{13}: checkout: moving from 54609fc806e2ffc968664fd91a2fd435281dccd2 to main
+[33m54609fc[m HEAD@{14}: commit (amend): rice update (dark mode)
+[33m78e341d[m HEAD@{15}: commit (amend): rice update (dark mode)
+[33m2565831[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{16}: rebase: fast-forward
+[33ma94813a[m HEAD@{17}: rebase (start): checkout 2565831^
+[33m2565831[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{18}: commit: rice update (dark mode)
+[33ma94813a[m HEAD@{19}: commit: update jsonc
+[33m5c60339[m HEAD@{20}: commit: update: json css
+[33m0a50b57[m HEAD@{21}: commit: added new wallpaper
+[33mcf2a434[m HEAD@{22}: commit: remove readme
+[33m61b7890[m HEAD@{23}: commit: update theme
+[33md000d1d[m HEAD@{24}: commit: update: rounded borders
+[33m41d38e5[m HEAD@{25}: pull --rebase origin main (finish): returning to refs/heads/main
+[33m41d38e5[m HEAD@{26}: pull --rebase origin main (pick): update configuration: config.jsonc and style.css
+[33mf3c1e02[m HEAD@{27}: pull --rebase origin main (start): checkout f3c1e0237c29ce4c579deb445a3c4e46878bfce3
+[33m8357a61[m HEAD@{28}: commit: update configuration: config.jsonc and style.css
+[33mdf501d1[m HEAD@{29}: commit: fastfetch config
+[33mabd0d50[m HEAD@{30}: commit: fastfetch config
+[33mf820aa5[m HEAD@{31}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mf820aa5[m HEAD@{32}: pull --rebase origin main (pick): bash update
+[33mceb5385[m HEAD@{33}: pull --rebase origin main (start): checkout ceb5385f4c242a36e1119c77385468c48e8852ad
+[33m4300baa[m HEAD@{34}: commit: bash update
+[33meab2f93[m HEAD@{35}: pull --rebase origin main (finish): returning to refs/heads/main
+[33meab2f93[m HEAD@{36}: pull --rebase origin main (pick): all wallpapers
+[33m71fb9cf[m HEAD@{37}: pull --rebase origin main (start): checkout 71fb9cfacee96b8dc7c20839fc0a76bfac1a8a24
+[33ma22a7c4[m HEAD@{38}: commit: all wallpapers
+[33mf4138c4[m HEAD@{39}: pull --rebase origin main (finish): returning to refs/heads/main
+[33mf4138c4[m HEAD@{40}: pull --rebase origin main (pick): bash shell
+[33m3ffb97e[m HEAD@{41}: pull --rebase origin main (start): checkout 3ffb97ebf14c7ba47103394e120f945eb1fa2697
+[33m77e1c64[m HEAD@{42}: commit: bash shell
+[33m2d70add[m HEAD@{43}: commit: screenshots
+[33md2434a7[m HEAD@{44}: pull --rebase origin main (finish): returning to refs/heads/main
+[33md2434a7[m HEAD@{45}: pull --rebase origin main (pick): update
+[33mc140a41[m HEAD@{46}: pull --rebase origin main (start): checkout c140a41d2048e2970e07f811e405036ecfeabfc0
+[33m50c76cf[m HEAD@{47}: commit: update
+[33m9deed6a[m HEAD@{48}: commit: update
+[33md19bee4[m HEAD@{49}: commit: add dotfiles
+[33m9bff2f2[m HEAD@{50}: commit: add dotfiles
+[33mffb023e[m HEAD@{51}: commit: New update
+[33m145131f[m HEAD@{52}: clone: from https://github.com/ashtonguevarra/dotfiles.git
